@@ -36,3 +36,10 @@ for link in soup.findAll('a', href=re.compile('/quakes/region/newzealand/.+')):
         print(n,rows)
         
 #Le script nous donne toutes les informations qui sont dans le tableau «Quake Details» pour chacun des tremblements de terre (30 plus récents)
+#Je ne te cacherai pas que j'ai eu de l'aide pour faire le travail. 
+# J'ai parlé à un ami qui s'y connait beaucoup plus en informatique (et donc, qui sait quelles questions poser à Stack Overflow) 
+# et je n'aurais jamais réussi le travail sans lui. 
+# J'ai tout de même appris qu'il existe d'autres façons d'extraire des données d'une page.
+# La fin du script avec la variable "row" est la principale différence
+# BeautifulSoup comprend les tableaux et il peut extraire le texte dans chacune des rangées du tableau d'un seul coup!
+# A mon avis, c'est beaucoup plus simple de procéder comme ça parce plutot que d'extraire un à la fois chacun des éléments qu'on cherche.
